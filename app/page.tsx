@@ -3,7 +3,7 @@ import Script from "next/script";
 export default function Home() {
   return (
     <>
-      <div className="announcement">Livraison rapide partout au Bénin <span>•</span> Service client WhatsApp <span>•</span> Emballage cadeau offert</div>
+      <div className="announcement">Livraison rapide au Bénin & à l'international <span>•</span> Service client WhatsApp <span>•</span> Emballage cadeau offert</div>
       <header className="site-header" id="top">
         <a className="brand" href="#top" aria-label="Glory Shop, accueil">
           <span className="brand-mark">G</span>
@@ -34,7 +34,7 @@ export default function Home() {
 
       <main>
         <section className="hero">
-          <img src="/images/hero-couple.png" alt="Couple élégant portant des bijoux Glory Shop" fetchPriority="high" />
+          <img src="/images/hero-couple.webp" alt="Couple élégant portant des bijoux Glory Shop" fetchPriority="high" />
           <div className="hero-shade" />
           <div className="hero-content reveal">
             <p className="eyebrow light">Nouvelle collection · 2026</p>
@@ -50,7 +50,7 @@ export default function Home() {
 
         <section className="trust-bar" aria-label="Nos garanties">
           <div><b>✦</b><span><strong>Qualité sélectionnée</strong><small>Des finitions soignées</small></span></div>
-          <div><b>◇</b><span><strong>Livraison rapide</strong><small>Partout au Bénin</small></span></div>
+          <div><b>◇</b><span><strong>Livraison rapide</strong><small>Bénin & International</small></span></div>
           <div><b>♙</b><span><strong>Conseil personnalisé</strong><small>Sur WhatsApp</small></span></div>
           <div><b>✓</b><span><strong>Satisfaction garantie</strong><small>Votre confiance d'abord</small></span></div>
         </section>
@@ -63,11 +63,11 @@ export default function Home() {
 
         <section className="gender-cards section-shell">
           <article className="gender-card reveal" id="femme">
-            <img src="/images/editorial-woman.png" alt="Collection de bijoux pour femme" loading="lazy" />
+            <img src="/images/editorial-woman.webp" alt="Collection de bijoux pour femme" loading="lazy" />
             <div className="gender-overlay"><p>Éclat délicat</p><h3>Femme</h3><button data-gender="Femme">Explorer la collection <span>→</span></button></div>
           </article>
           <article className="gender-card reveal" id="homme">
-            <img src="/images/editorial-men.png" alt="Collection de bijoux et montres pour homme" loading="lazy" />
+            <img src="/images/editorial-men.webp" alt="Collection de bijoux et montres pour homme" loading="lazy" />
             <div className="gender-overlay"><p>Caractère affirmé</p><h3>Homme</h3><button data-gender="Homme">Explorer la collection <span>→</span></button></div>
           </article>
         </section>
@@ -92,7 +92,7 @@ export default function Home() {
         </section>
 
         <section className="editorial-banner reveal">
-          <img src="/images/editorial-evening.png" alt="Bijoux de soirée dorés" loading="lazy" />
+          <img src="/images/editorial-evening.webp" alt="Bijoux de soirée dorés" loading="lazy" />
           <div><p className="eyebrow light">Éditions soirée</p><h2>Brillez quand<br /><em>tout compte.</em></h2><p>Des pièces lumineuses, pensées pour les célébrations et les cadeaux inoubliables.</p><button className="button button-gold" data-filter-jump="Ensembles">Voir les ensembles</button></div>
         </section>
 
@@ -101,7 +101,7 @@ export default function Home() {
           <div className="value-grid">
             <article className="reveal"><span>01</span><i>✦</i><h3>Qualité premium</h3><p>Des pièces sélectionnées pour leur éclat, leur finition et leur confort au quotidien.</p></article>
             <article className="reveal"><span>02</span><i>₣</i><h3>Prix accessibles</h3><p>Un style remarquable à prix juste, avec des options adaptées à chaque budget.</p></article>
-            <article className="reveal"><span>03</span><i>↗</i><h3>Livraison rapide</h3><p>Préparation attentive et suivi clair de votre commande partout au Bénin.</p></article>
+            <article className="reveal"><span>03</span><i>↗</i><h3>Expédition</h3><p>Préparation attentive et expédition de votre commande au Bénin et à l'international.</p></article>
             <article className="reveal"><span>04</span><i>♙</i><h3>Service disponible</h3><p>Des conseils humains pour choisir une taille, une couleur ou le cadeau idéal.</p></article>
             <article className="reveal"><span>05</span><i>□</i><h3>Paiement rassurant</h3><p>Votre commande est confirmée directement avec notre équipe avant livraison.</p></article>
             <article className="reveal"><span>06</span><i>✓</i><h3>Satisfaction garantie</h3><p>Nous vérifions chaque article et restons disponibles après votre achat.</p></article>
@@ -109,7 +109,7 @@ export default function Home() {
         </section>
 
         <section className="order-section" id="commande">
-          <div className="order-image reveal"><img src="/images/gift-set.png" alt="Coffret cadeau de bijoux Glory Shop" loading="lazy" /><div><span>Un cadeau ?</span><p>Demandez votre emballage offert.</p></div></div>
+          <div className="order-image reveal"><img src="/images/gift-set.webp" alt="Coffret cadeau de bijoux Glory Shop" loading="lazy" /><div><span>Un cadeau ?</span><p>Demandez votre emballage offert.</p></div></div>
           <div className="order-panel reveal">
             <p className="eyebrow">Commande simple</p><h2>Finalisez sur <em>WhatsApp</em></h2><p className="order-intro">Ajoutez vos coups de cœur, complétez vos informations, puis envoyez votre commande en un clic.</p>
             <div className="order-items" id="orderItems"><div className="cart-empty"><span>◇</span><p>Votre sélection est vide.</p><a href="#catalogue">Découvrir les bijoux</a></div></div>
@@ -145,10 +145,10 @@ export default function Home() {
           <div className="contact-details reveal">
             <div><small>WhatsApp & téléphone</small><a href="tel:+22943244364">+229 43 24 43 64</a></div>
             <div><small>Horaires</small><p>Lun — Sam · 08h00 — 20h00<br />Dimanche · Sur WhatsApp</p></div>
-            <div><small>Adresse</small><p>Cotonou, Bénin<br />Livraison dans tout le pays</p></div>
+            <div><small>Adresse</small><p>Cotonou, Bénin<br />Livraison nationale & internationale</p></div>
             <div><small>Nous suivre</small><p className="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></p></div>
           </div>
-          <div className="map-placeholder"><span>GLORY SHOP</span><p>Cotonou · Bénin</p><small>Carte Google Maps à personnaliser</small></div>
+          <div className="map-placeholder" style={{ padding: 0, overflow: 'hidden' }}><img src="/images/brand-banner.png" alt="Glory Shop — Votre éclat. Votre signature." style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} loading="lazy" /></div>
         </section>
       </main>
 

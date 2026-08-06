@@ -3,18 +3,18 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || "https://glory-shop.pages.dev"),
-  title: "Glory Shop | Bijoux & accessoires premium au Bénin",
+  title: "Glory Shop | Bijoux & accessoires premium",
   description: "Découvrez les collections femme et homme Glory Shop : colliers, bracelets, bagues, montres, boucles d'oreilles et ensembles. Commandez facilement sur WhatsApp.",
   keywords: ["bijoux Bénin", "bijoux Cotonou", "montres homme", "bijoux femme", "Glory Shop"],
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   openGraph: {
     title: "Glory Shop — Votre éclat, votre signature",
-    description: "Bijoux et accessoires premium pour femme et homme. Livraison partout au Bénin.",
+    description: "Bijoux et accessoires premium pour femme et homme. Livraison au Bénin et à l'international.",
     type: "website",
     locale: "fr_BJ",
-    images: [{ url: "/og.png", width: 1664, height: 944, alt: "Glory Shop — Votre éclat. Votre signature." }],
+    images: [{ url: "/images/brand-banner.png", width: 1664, height: 944, alt: "Glory Shop — Votre éclat. Votre signature." }],
   },
-  twitter: { card: "summary_large_image", title: "Glory Shop — Votre éclat, votre signature", description: "Bijoux et accessoires premium au Bénin.", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title: "Glory Shop — Votre éclat, votre signature", description: "Bijoux et accessoires premium avec livraison au Bénin et à l'international.", images: ["/images/brand-banner.png"] },
   robots: { index: true, follow: true },
 };
 
