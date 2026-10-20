@@ -6,7 +6,7 @@ export default function Home() {
       <div className="announcement">Livraison rapide au Bénin & à l'international <span>•</span> Service client WhatsApp <span>•</span> Emballage cadeau offert</div>
       <header className="site-header" id="top">
         <a className="brand" href="#top" aria-label="BHZ EMPIRE, accueil">
-          <span className="brand-mark">B</span>
+          <img src="/images/bhz-logo.png" alt="BHZ EMPIRE" className="brand-logo" width="42" height="42" />
           <span><strong>BHZ</strong><small>EMPIRE</small></span>
         </a>
         <nav className="desktop-nav" aria-label="Navigation principale">
@@ -154,7 +154,7 @@ export default function Home() {
 
       <footer>
         <div className="footer-main">
-          <div className="footer-brand"><a className="brand light-brand" href="#top"><span className="brand-mark">B</span><span><strong>BHZ</strong><small>EMPIRE</small></span></a><p>Des bijoux qui révèlent votre éclat.</p></div>
+          <div className="footer-brand"><a className="brand light-brand" href="#top"><img src="/images/bhz-logo.png" alt="BHZ EMPIRE" className="brand-logo" width="42" height="42" /><span><strong>BHZ</strong><small>EMPIRE</small></span></a><p>Des bijoux qui révèlent votre éclat.</p></div>
           <div><h3>Explorer</h3><a href="#collection">Collections</a><a href="#femme">Femme</a><a href="#homme">Homme</a><a href="#commande">Commander</a></div>
           <div><h3>Informations</h3><a href="#faq">Livraison & retours</a><a href="#faq">Guide des tailles</a><a href="#faq">Entretien</a><a href="#contact">Nous contacter</a></div>
           <div><h3>Newsletter privée</h3><p>Recevez nos nouveautés et offres exclusives.</p><form id="newsletterForm"><input type="email" required placeholder="Votre adresse e-mail" aria-label="Votre adresse e-mail" /><button aria-label="S'inscrire">→</button></form></div>

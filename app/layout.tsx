@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "BHZ EMPIRE | Bijoux & accessoires premium",
   description: "Découvrez les collections femme et homme BHZ EMPIRE : colliers, bracelets, bagues, montres, boucles d'oreilles et ensembles. Commandez facilement sur WhatsApp.",
   keywords: ["bijoux Bénin", "bijoux Cotonou", "montres homme", "bijoux femme", "BHZ EMPIRE"],
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: { icon: "/images/bhz-logo.png", shortcut: "/images/bhz-logo.png", apple: "/images/bhz-logo.png" },
   openGraph: {
     title: "BHZ EMPIRE — Votre éclat, votre signature",
     description: "Bijoux et accessoires premium pour femme et homme. Livraison au Bénin et à l'international.",
