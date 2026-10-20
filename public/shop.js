@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const WHATSAPP = "22943244364";
+  const WHATSAPP = "2290169296243";
   const products = [
     {id:"GS-FC01",name:"Cascade Lumière",gender:"Femme",category:"Colliers",image:"/images/women-necklace-cascade.webp",price:18500,badge:"Nouveau",desc:"Collier sautoir coulissant aux lignes fines, conçu pour allonger délicatement la silhouette.",material:"Acier inoxydable plaqué",quality:"Premium",finish:"Dorure brillante",stone:"Cristaux sertis",colors:["Doré","Rose gold"],sizes:["Réglable 45–70 cm"],weight:"18 g",style:"Chic minimaliste",occasion:"Travail, soirée, cadeau",care:"Essuyer après usage et ranger à l'abri de l'humidité.",compatibility:"Peaux sensibles, sans nickel déclaré",availability:"En stock",delivery:"24 à 72 h",wholesale:"Oui, dès 10 pièces",advice:"Idéal avec un col en V ou une robe unie.",warranty:"Contrôle qualité à réception"},
     {id:"GS-FB01",name:"Constellation",gender:"Femme",category:"Bracelets",image:"/images/women-bracelets-star.webp",price:12500,badge:"Tendance",desc:"Composition de bracelets fins, étoilés et lumineux à porter seuls ou en accumulation.",material:"Alliage premium et acier",quality:"Sélection supérieure",finish:"Polie et pavée",stone:"Cristaux zircon",colors:["Doré","Argenté"],sizes:["16–21 cm réglable"],weight:"6 à 12 g",style:"Délicat",occasion:"Quotidien, anniversaire",care:"Éviter parfum direct et produits abrasifs.",compatibility:"Poignet fin à moyen",availability:"En stock",delivery:"24 à 72 h",wholesale:"Oui, selon stock",advice:"Mélangez deux modèles maximum pour un rendu raffiné.",warranty:"Vérification avant expédition"},
@@ -80,13 +80,13 @@
     ["Comment fonctionnent les filtres ?","Choisissez Femme, Homme ou un type de bijou, puis affinez par couleur et tranche de prix."],
     ["Mes articles restent-ils dans ma sélection ?","Oui, la sélection est conservée sur votre appareil pour faciliter une commande ultérieure."],
     ["Mes données personnelles sont-elles protégées ?","Les informations du formulaire servent uniquement à composer votre message WhatsApp et ne sont pas stockées dans une base de données par ce site."],
-    ["Comment contacter le service client ?","Écrivez ou appelez le +229 43 24 43 64. WhatsApp reste le moyen le plus rapide pour une réponse détaillée."]
+    ["Comment contacter le service client ?","Écrivez ou appelez le +229 01 69 29 62 43. WhatsApp reste le moyen le plus rapide pour une réponse détaillée."]
   ];
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
   const money = value => new Intl.NumberFormat("fr-FR").format(value) + " FCFA";
-  let cart = JSON.parse(localStorage.getItem("glory-cart") || "[]");
+  let cart = JSON.parse(localStorage.getItem("bhz-cart") || localStorage.getItem("glory-cart") || "[]");
   let activeFilter = "Tous";
   let faqsExpanded = false;
 
@@ -101,7 +101,7 @@
       button.setAttribute("title", label);
       button.setAttribute("aria-pressed", String(dark));
     }
-    if (persist) localStorage.setItem("glory-theme", theme);
+    if (persist) { localStorage.setItem("bhz-theme", theme); localStorage.setItem("glory-theme", theme); }
   }
 
   function productCard(product) {
@@ -142,12 +142,12 @@
     const p = products.find(item => item.id === id); if (!p) return;
     const extra = [p.attachment && ["Type d'attache",p.attachment],p.length && ["Longueur",p.length],p.pieces && ["Nombre de pièces",p.pieces],p.composition && ["Composition",p.composition],p.diameter && ["Diamètre",p.diameter],p.strap && ["Bracelet",p.strap],p.resistance && ["Résistance",p.resistance],p.movement && ["Mouvement",p.movement]].filter(Boolean);
     const specs = [["Référence",p.id],["Matière",p.material],["Qualité",p.quality],["Finition",p.finish],["Pierre",p.stone],["Poids",p.weight],["Style",p.style],["Occasion",p.occasion],["Compatibilité",p.compatibility],["Disponibilité",p.availability],["Livraison",p.delivery],["Achat en gros",p.wholesale],["Garantie",p.warranty],...extra];
-    $("#modalContent").innerHTML = `<div class="modal-product"><div class="modal-visual"><img src="${p.image}" alt="${p.name}"></div><div class="modal-info"><p class="eyebrow">${p.gender} · ${p.category}</p><h2 id="modalTitle">${p.name}</h2><div class="modal-price">${money(p.price)}</div><p class="modal-description">${p.desc}</p><div class="spec-grid">${specs.map(([a,b]) => `<div><small>${a}</small><strong>${b}</strong></div>`).join("")}</div><div class="modal-selectors"><label>Couleur<select id="modalColor">${p.colors.map(c=>`<option>${c}</option>`).join("")}</select></label><label>Taille<select id="modalSize">${p.sizes.map(s=>`<option>${s}</option>`).join("")}</select></label></div><p class="modal-care"><strong>Conseil :</strong> ${p.advice}<br><strong>Entretien :</strong> ${p.care}</p><div class="modal-actions"><button data-modal-add="${p.id}">Ajouter à ma commande</button><a href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Bonjour Glory Shop, je souhaite en savoir plus sur " + p.name + " (" + p.id + ").")}" target="_blank" aria-label="Demander sur WhatsApp">◉</a></div></div></div>`;
+    $("#modalContent").innerHTML = `<div class="modal-product"><div class="modal-visual"><img src="${p.image}" alt="${p.name}"></div><div class="modal-info"><p class="eyebrow">${p.gender} · ${p.category}</p><h2 id="modalTitle">${p.name}</h2><div class="modal-price">${money(p.price)}</div><p class="modal-description">${p.desc}</p><div class="spec-grid">${specs.map(([a,b]) => `<div><small>${a}</small><strong>${b}</strong></div>`).join("")}</div><div class="modal-selectors"><label>Couleur<select id="modalColor">${p.colors.map(c=>`<option>${c}</option>`).join("")}</select></label><label>Taille<select id="modalSize">${p.sizes.map(s=>`<option>${s}</option>`).join("")}</select></label></div><p class="modal-care"><strong>Conseil :</strong> ${p.advice}<br><strong>Entretien :</strong> ${p.care}</p><div class="modal-actions"><button data-modal-add="${p.id}">Ajouter à ma commande</button><a href="https://wa.me/${WHATSAPP}?text=${encodeURIComponent("Bonjour BHZ EMPIRE, je souhaite en savoir plus sur " + p.name + " (" + p.id + ").")}" target="_blank" aria-label="Demander sur WhatsApp">◉</a></div></div></div>`;
     $("#productModal").classList.add("open"); $("#productModal").setAttribute("aria-hidden","false"); document.body.classList.add("locked");
   }
 
   function closeModal() { $("#productModal").classList.remove("open"); $("#productModal").setAttribute("aria-hidden","true"); document.body.classList.remove("locked"); }
-  function saveCart() { localStorage.setItem("glory-cart", JSON.stringify(cart)); renderCart(); }
+  function saveCart() { localStorage.setItem("bhz-cart", JSON.stringify(cart)); renderCart(); }
   function addToCart(id, color, size) { const p = products.find(item=>item.id===id); if(!p)return; const c=color||p.colors[0], s=size||p.sizes[0]; const existing=cart.find(i=>i.id===id&&i.color===c&&i.size===s); if(existing) existing.qty+=1; else cart.push({id,color:c,size:s,qty:1}); saveCart(); toast(`${p.name} ajouté à la commande`); }
   function changeQty(index, delta) { if(!cart[index])return; cart[index].qty += delta; if(cart[index].qty < 1) cart.splice(index,1); saveCart(); }
   function cartMarkup() { if(!cart.length) return `<div class="cart-empty"><span>◇</span><p>Votre sélection est vide.</p><a href="#catalogue">Découvrir les bijoux</a></div>`; return cart.map((item,index)=>{const p=products.find(x=>x.id===item.id);return `<div class="order-line"><img src="${p.image}" alt="${p.name}"><div><h4>${p.name}</h4><p>${item.color} · ${item.size}</p><strong>${money(p.price*item.qty)}</strong></div><div class="order-line-controls"><button data-qty="${index}" data-delta="-1">−</button><span>${item.qty}</span><button data-qty="${index}" data-delta="1">+</button><button class="remove-item" data-remove="${index}">Retirer</button></div></div>`}).join(""); }
@@ -193,8 +193,8 @@
   $("#cartToggle").addEventListener("click",openCart); $("#cartClose").addEventListener("click",closeCart); $("#drawerBackdrop").addEventListener("click",closeCart); $("#checkoutLink").addEventListener("click",closeCart);
   $("#faqSearch").addEventListener("input",renderFaqs); $("#faqMore").addEventListener("click",()=>{faqsExpanded=!faqsExpanded;renderFaqs()});
   $("#backTop").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"})); window.addEventListener("scroll",()=>$("#backTop").classList.toggle("show",window.scrollY>700),{passive:true});
-  $("#orderForm").addEventListener("submit",event=>{event.preventDefault();if(!cart.length){toast("Ajoutez au moins un article à votre commande");$("#catalogue").scrollIntoView({behavior:"smooth"});return}const data=new FormData(event.currentTarget);const lines=cart.map((item,index)=>{const p=products.find(x=>x.id===item.id);return `Article ${index+1} : ${p.name} (${p.id})\nCouleur : ${item.color}\nTaille : ${item.size}\nQuantité : ${item.qty}\nPrix : ${money(p.price*item.qty)}`}).join("\n\n");const total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);const message=`Bonjour Glory Shop, je souhaite passer cette commande :\n\nNom : ${data.get("name")}\nTéléphone : ${data.get("phone")}\nVille : ${data.get("city")}\nQuartier : ${data.get("district")||"Non précisé"}\nAdresse : ${data.get("address")||"Non précisée"}\nMode de livraison : ${data.get("delivery")}\n\n${lines}\n\nTotal estimé : ${money(total)}\nRemarques : ${data.get("notes")||"Aucune"}\n\nMerci de me confirmer la disponibilité et les frais de livraison.`;window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`,"_blank","noopener,noreferrer")});
-  $("#newsletterForm").addEventListener("submit",event=>{event.preventDefault();event.currentTarget.reset();toast("Merci ! Vous êtes inscrit(e) aux nouvelles Glory Shop.")});
+  $("#orderForm").addEventListener("submit",event=>{event.preventDefault();if(!cart.length){toast("Ajoutez au moins un article à votre commande");$("#catalogue").scrollIntoView({behavior:"smooth"});return}const data=new FormData(event.currentTarget);const lines=cart.map((item,index)=>{const p=products.find(x=>x.id===item.id);return `Article ${index+1} : ${p.name} (${p.id})\nCouleur : ${item.color}\nTaille : ${item.size}\nQuantité : ${item.qty}\nPrix : ${money(p.price*item.qty)}`}).join("\n\n");const total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);const message=`Bonjour BHZ EMPIRE, je souhaite passer cette commande :\n\nNom : ${data.get("name")}\nTéléphone : ${data.get("phone")}\nVille : ${data.get("city")}\nQuartier : ${data.get("district")||"Non précisé"}\nAdresse : ${data.get("address")||"Non précisée"}\nMode de livraison : ${data.get("delivery")}\n\n${lines}\n\nTotal estimé : ${money(total)}\nRemarques : ${data.get("notes")||"Aucune"}\n\nMerci de me confirmer la disponibilité et les frais de livraison.`;window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`,"_blank","noopener,noreferrer")});
+  $("#newsletterForm").addEventListener("submit",event=>{event.preventDefault();event.currentTarget.reset();toast("Merci ! Vous êtes inscrit(e) aux nouvelles BHZ EMPIRE.")});
   document.addEventListener("keydown",event=>{if(event.key==="Escape"){closeModal();closeCart();$("#searchPanel").classList.remove("open")}});
 
   applyTheme(document.documentElement.dataset.theme || "light", false);

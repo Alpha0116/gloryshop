@@ -5,9 +5,9 @@ export default function Home() {
     <>
       <div className="announcement">Livraison rapide au Bénin & à l'international <span>•</span> Service client WhatsApp <span>•</span> Emballage cadeau offert</div>
       <header className="site-header" id="top">
-        <a className="brand" href="#top" aria-label="Glory Shop, accueil">
-          <span className="brand-mark">G</span>
-          <span><strong>GLORY</strong><small>SHOP</small></span>
+        <a className="brand" href="#top" aria-label="BHZ EMPIRE, accueil">
+          <span className="brand-mark">B</span>
+          <span><strong>BHZ</strong><small>EMPIRE</small></span>
         </a>
         <nav className="desktop-nav" aria-label="Navigation principale">
           <a href="#collection">Collection</a>
@@ -34,7 +34,7 @@ export default function Home() {
 
       <main>
         <section className="hero">
-          <img src="/images/hero-couple.webp" alt="Couple élégant portant des bijoux Glory Shop" fetchPriority="high" />
+          <img src="/images/hero-couple.webp" alt="Couple élégant portant des bijoux BHZ EMPIRE" fetchPriority="high" />
           <div className="hero-shade" />
           <div className="hero-content reveal">
             <p className="eyebrow light">Nouvelle collection · 2026</p>
@@ -42,7 +42,7 @@ export default function Home() {
             <p className="hero-copy">Des bijoux choisis pour illuminer les instants simples et sublimer les grands jours.</p>
             <div className="hero-buttons">
               <a className="button button-gold" href="#collection">Découvrir la collection</a>
-              <a className="button button-ghost" href="https://wa.me/22943244364" target="_blank" rel="noreferrer">Nous contacter</a>
+              <a className="button button-ghost" href="https://wa.me/2290169296243" target="_blank" rel="noreferrer">Nous contacter</a>
             </div>
           </div>
           <div className="hero-note"><span>01</span><div /><p>Élégance<br />sans compromis</p></div>
@@ -56,7 +56,7 @@ export default function Home() {
         </section>
 
         <section className="intro section-shell reveal" id="collection">
-          <p className="eyebrow">La maison Glory</p>
+          <p className="eyebrow">La maison BHZ EMPIRE</p>
           <h2>Le bijou qui raconte<br /><em>votre histoire</em></h2>
           <p>Des pièces intemporelles aux détails contemporains, notre sélection accompagne chaque personnalité, chaque style et chaque occasion.</p>
         </section>
@@ -97,7 +97,7 @@ export default function Home() {
         </section>
 
         <section className="values section-shell" id="avantages">
-          <div className="section-heading centered reveal"><div><p className="eyebrow">L'expérience Glory Shop</p><h2>Pourquoi nous <em>choisir</em></h2></div></div>
+          <div className="section-heading centered reveal"><div><p className="eyebrow">L'expérience BHZ EMPIRE</p><h2>Pourquoi nous <em>choisir</em></h2></div></div>
           <div className="value-grid">
             <article className="reveal"><span>01</span><i>✦</i><h3>Qualité premium</h3><p>Des pièces sélectionnées pour leur éclat, leur finition et leur confort au quotidien.</p></article>
             <article className="reveal"><span>02</span><i>₣</i><h3>Prix accessibles</h3><p>Un style remarquable à prix juste, avec des options adaptées à chaque budget.</p></article>
@@ -109,7 +109,7 @@ export default function Home() {
         </section>
 
         <section className="order-section" id="commande">
-          <div className="order-image reveal"><img src="/images/gift-set.webp" alt="Coffret cadeau de bijoux Glory Shop" loading="lazy" /><div><span>Un cadeau ?</span><p>Demandez votre emballage offert.</p></div></div>
+          <div className="order-image reveal"><img src="/images/gift-set.webp" alt="Coffret cadeau de bijoux BHZ EMPIRE" loading="lazy" /><div><span>Un cadeau ?</span><p>Demandez votre emballage offert.</p></div></div>
           <div className="order-panel reveal">
             <p className="eyebrow">Commande simple</p><h2>Finalisez sur <em>WhatsApp</em></h2><p className="order-intro">Ajoutez vos coups de cœur, complétez vos informations, puis envoyez votre commande en un clic.</p>
             <div className="order-items" id="orderItems"><div className="cart-empty"><span>◇</span><p>Votre sélection est vide.</p><a href="#catalogue">Découvrir les bijoux</a></div></div>
@@ -141,28 +141,28 @@ export default function Home() {
         </section>
 
         <section className="contact" id="contact">
-          <div className="contact-copy reveal"><p className="eyebrow light">Parlons de votre choix</p><h2>Nous sommes là<br /><em>pour vous.</em></h2><p>Un doute sur une taille ou une couleur ? Écrivez-nous, notre équipe vous répond avec plaisir.</p><a className="button button-gold" href="https://wa.me/22943244364" target="_blank" rel="noreferrer">Écrire sur WhatsApp</a></div>
+          <div className="contact-copy reveal"><p className="eyebrow light">Parlons de votre choix</p><h2>Nous sommes là<br /><em>pour vous.</em></h2><p>Un doute sur une taille ou une couleur ? Écrivez-nous, notre équipe vous répond avec plaisir.</p><a className="button button-gold" href="https://wa.me/2290169296243" target="_blank" rel="noreferrer">Écrire sur WhatsApp</a></div>
           <div className="contact-details reveal">
-            <div><small>WhatsApp & téléphone</small><a href="tel:+22943244364">+229 43 24 43 64</a></div>
+            <div><small>WhatsApp & téléphone</small><a href="tel:+2290169296243">+229 01 69 29 62 43</a></div>
             <div><small>Horaires</small><p>Lun — Sam · 08h00 — 20h00<br />Dimanche · Sur WhatsApp</p></div>
             <div><small>Adresse</small><p>Cotonou, Bénin<br />Livraison nationale & internationale</p></div>
-            <div><small>Nous suivre</small><p className="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></p></div>
+            <div><small>Nous suivre</small><p className="socials"><a href="https://www.tiktok.com/@bhzempire?_r=1&_t=ZS-9AionjBdS6P" target="_blank" rel="noreferrer">TikTok</a><a href="https://www.instagram.com/bhz_empire?obrf=MWY0YXN6YWx4OHhhZA==" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.facebook.com/share/1A6D586Hub/" target="_blank" rel="noreferrer">Facebook</a></p></div>
           </div>
-          <div className="map-placeholder" style={{ padding: 0, overflow: 'hidden' }}><img src="/images/brand-banner.png" alt="Glory Shop — Votre éclat. Votre signature." style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} loading="lazy" /></div>
+          <div className="map-placeholder" style={{ padding: 0, overflow: 'hidden' }}><img src="/images/brand-banner.png?v=2" alt="BHZ EMPIRE — Votre éclat. Votre signature." style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} loading="lazy" /></div>
         </section>
       </main>
 
       <footer>
         <div className="footer-main">
-          <div className="footer-brand"><a className="brand light-brand" href="#top"><span className="brand-mark">G</span><span><strong>GLORY</strong><small>SHOP</small></span></a><p>Des bijoux qui révèlent votre éclat.</p></div>
+          <div className="footer-brand"><a className="brand light-brand" href="#top"><span className="brand-mark">B</span><span><strong>BHZ</strong><small>EMPIRE</small></span></a><p>Des bijoux qui révèlent votre éclat.</p></div>
           <div><h3>Explorer</h3><a href="#collection">Collections</a><a href="#femme">Femme</a><a href="#homme">Homme</a><a href="#commande">Commander</a></div>
           <div><h3>Informations</h3><a href="#faq">Livraison & retours</a><a href="#faq">Guide des tailles</a><a href="#faq">Entretien</a><a href="#contact">Nous contacter</a></div>
           <div><h3>Newsletter privée</h3><p>Recevez nos nouveautés et offres exclusives.</p><form id="newsletterForm"><input type="email" required placeholder="Votre adresse e-mail" aria-label="Votre adresse e-mail" /><button aria-label="S'inscrire">→</button></form></div>
         </div>
-        <div className="footer-bottom"><span>© 2026 Glory Shop. Tous droits réservés.</span><p><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">Conditions générales</a></p></div>
+        <div className="footer-bottom"><span>© 2026 BHZ EMPIRE. Tous droits réservés.</span><p><a href="#">Mentions légales</a><a href="#">Confidentialité</a><a href="#">Conditions générales</a></p></div>
       </footer>
 
-      <a className="floating-whatsapp" href="https://wa.me/22943244364" target="_blank" rel="noreferrer" aria-label="Contacter Glory Shop sur WhatsApp">◉<span>Besoin d'aide ?</span></a>
+      <a className="floating-whatsapp" href="https://wa.me/2290169296243" target="_blank" rel="noreferrer" aria-label="Contacter BHZ EMPIRE sur WhatsApp">◉<span>Besoin d'aide ?</span></a>
       <button className="back-top" id="backTop" aria-label="Retour en haut">↑</button>
 
       <div className="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true"><div className="modal-backdrop" data-close-modal /><div className="modal-card"><button className="modal-close" data-close-modal aria-label="Fermer">×</button><div id="modalContent" /></div></div>
